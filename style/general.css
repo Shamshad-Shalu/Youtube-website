@@ -1,0 +1,13 @@
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  padding: 123px 25px 100px 90px ;
+
+}
+p {
+  margin: 0;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}

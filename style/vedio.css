@@ -1,0 +1,144 @@
+.display-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 25px;
+  column-gap: 17px;
+
+}
+.vedio-section{
+  cursor: pointer;
+}
+
+.vedio-preview  {
+  margin-bottom: 10px;
+  position: relative;
+ 
+}
+.vedio-preview img  {
+  width: 100%;
+  border-radius: 15px;
+  transition: border-radius 0.2s ease-in-out;
+
+}
+
+.vedio-preview:hover img {
+  border-radius: 0; 
+
+}
+
+.vedio-preview:hover  .vedio-length-sponser {
+  opacity: 0;
+} 
+
+.vedio-length {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 5px;
+  border-radius: 2px;
+}
+.vedio-length-sponser {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.vedio-length-sponser img {
+  height: 35px;
+  border-radius: 15px;
+
+}
+
+.info-section{
+  display: flex;
+  padding-bottom: 15px;
+
+}
+
+.profile-section {
+  width: 40px;
+  
+}
+
+.profile-section img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.vedio-info {
+  flex: 1;
+  margin-left: 15px;
+ 
+
+}
+.heading {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+}
+
+.channel-name {
+  font-size: 14px;
+  color: #606060;
+  margin-bottom: 3px;
+  position: relative;
+  width: fit-content;
+}
+
+.channel-name:hover {
+  color: black;
+
+}
+
+.channel-name .tool-tip {
+  position: absolute;
+  top: -65px;
+  background-color: rgb(133, 112, 112);
+  color: white;
+  font-size: 11px;
+  padding: 8px 10px ;
+  border-radius: 2px;
+  opacity:0;
+  transition: opacity 0.15s ;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.channel-name .sponser {
+  left: 80px;
+  top: -55px;
+}
+
+.channel-name:hover .tool-tip  {
+  opacity: 1;
+}
+
+.review {
+  font-size: 13px;
+  color: #606060;
+  margin-bottom: 3px;
+
+} 
+
+.channel-name strong {
+  color: black;
+}
+
+
+@media (max-width:630px ){
+  .display-row {
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+}
+
+@media (min-width:631px) and (max-width:980px ){
+  .display-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
